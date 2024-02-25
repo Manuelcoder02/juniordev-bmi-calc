@@ -1,0 +1,150 @@
+/* RESET STYLING */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+body {
+  background: var(
+    --Gradient-1,
+    linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%)
+  );
+}
+.container {
+  text-align: center;
+}
+
+/* HEADER STYLING */
+header img {
+  width: 40px;
+  /* border: 3px solid blue; */
+  padding: 1.3em 0;
+}
+.header-text {
+  color: var(--Gunmetal, #253347);
+  font-size: 2.8em;
+  font-weight: 600;
+  line-height: 110%;
+  padding-bottom: 0.5em;
+}
+.header p {
+  color: var(--Dark-Electric-Blue, #5e6e85);
+  font-weight: 400;
+  line-height: 150%;
+  padding-bottom: 1em;
+}
+
+/* USER DETAILS */
+.user-details {
+  background: var(--Pure-White, #fff);
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  border-radius: 1em;
+  padding: 1em;
+  text-align: left;
+}
+.user-details h1 {
+  color: var(--Gunmetal, #253347);
+  font-family: Inter;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.radio-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+
+  & .radio-one,
+  .radio-two {
+    display: flex;
+    gap: 1em;
+    color: var(--Gunmetal, #253347);
+    font-family: Inter;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+}
+
+.height-box,
+.weight-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+
+  & label {
+    color: #5e6e85;
+    font-size: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  & input {
+    padding: 1.5em 0.5em;
+    border-radius: 0.8em;
+    border: 1px solid #d8e2e7;
+
+    &::placeholder {
+      color: var(--Blue, #345ff6);
+      font-size: 1.5em;
+      font-weight: 600;
+      text-align: right;
+    }
+  }
+}
+
+.form-two {
+  display: none;
+  & .height-box,
+  .weight-box {
+    width: 100%;
+    & .row {
+      display: flex;
+      gap: 1em;
+      width: 100%;
+      & #height,
+      #inches,
+      #stone-weight,
+      #pound {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/* BMI Info */
+.bmi-info {
+  background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+  border-radius: 1em;
+  padding: 2em;
+  color: var(--Pure-White, #fff);
+
+  & .bmi-score {
+    color: var(--Pure-White, #fff);
+    font-weight: 600;
+    font-size: 3em;
+  }
+  & .col-2 {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 150%;
+
+    & .bmi-range {
+      font-weight: 600;
+    }
+  }
+}
