@@ -155,3 +155,34 @@ header p {
     }
   }
 }
+
+/* BMI MEANING SECTION STYLING */
+.bmi-meaning {
+  /* border: 3px solid red; */
+  margin-top: 3em;
+  text-align: left;
+  padding: 2em 0;
+
+  & .row-1 {
+    /* border: 3px solid red; */
+    margin-bottom: 3em;
+
+    & .col-2 {
+      /* border: 3px solid black; */
+      margin-top: 1em;
+
+      & h3 {
+        color: var(--Gunmetal, #253347);
+        font-size: 1.7em;
+        line-height: 1em;
+        padding: 1em 0;
+      }
+
+      & p {
+        color: var(--Dark-Electric-Blue, #5e6e85);
+        font-size: 1em;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
