@@ -13,7 +13,7 @@ img {
 .container {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 @font-face {
@@ -33,6 +33,7 @@ header {
   );
   width: 100%;
   padding-bottom: 20em;
+  text-align: center;
 }
 header img {
   width: 40px;
@@ -63,6 +64,8 @@ header p {
   border-radius: 1em;
   padding: 1em;
   text-align: left;
+  width: 90%;
+  margin: 0 auto;
 }
 .user-details h1 {
   color: var(--Gunmetal, #253347);
@@ -184,5 +187,49 @@ header p {
         line-height: 1.3em;
       }
     }
+  }
+
+  & .row-2 {
+    /* border: 3px solid red; */
+    background: var(
+      --Gradient-1,
+      linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%)
+    );
+
+    & .eating,
+    .exercise,
+    .sleep {
+      /* border: 3px solid green; */
+      padding: 1em 0;
+
+      & .col-1 {
+        padding-bottom: 1em;
+      }
+
+      & h4 {
+        color: #253347;
+        font-size: 1.3em;
+        padding-bottom: 1em;
+      }
+
+      & p {
+        color: var(--Dark-Electric-Blue, #5e6e85);
+        font-size: 1em;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+/* LIMITATION SECTION STYLING */
+.limitations {
+  border: 3px solid red;
+  margin-top: 2em;
+
+  & h3 {
+    color: var(--Gunmetal, #253347);
+    font-size: 1.7em;
+    line-height: 1em;
+    padding: 1em 0;
   }
 }
