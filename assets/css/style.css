@@ -177,9 +177,10 @@ header p {
 
       & h3 {
         color: var(--Gunmetal, #253347);
-        font-size: 1.7em;
-        line-height: 1em;
+        font-size: 1.9em;
+        line-height: 110%;
         padding: 1em 0;
+        font-weight: 600;
       }
 
       & p {
@@ -310,6 +311,56 @@ header p {
 
     & .col-2 {
       width: 50%;
+    }
+  }
+
+  .bmi-meaning {
+    & .row-1 {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      & .col-1,
+      .col-2 {
+        width: 48%;
+      }
+    }
+
+    & .row-2 {
+      & .eating,
+      .exercise,
+      .sleep {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 1.5em;
+    grid-template-areas:
+      " gender age"
+      " muscle pregnancy"
+      " race race";
+    place-items: center;
+
+    & .gender {
+      grid-area: gender;
+    }
+    & .age {
+      grid-area: age;
+    }
+    & .muscle {
+      grid-area: muscle;
+    }
+    & .pregnancy {
+      grid-area: pregnancy;
+    }
+    & .race {
+      grid-area: race;
     }
   }
 }
