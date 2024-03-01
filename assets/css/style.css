@@ -25,7 +25,7 @@ body {
 }
 
 /* HEADER STYLING */
-header {
+.header {
   border-radius: 0px 0px 35px 35px;
   background: var(
     --Gradient-1,
@@ -35,7 +35,7 @@ header {
   padding-bottom: 20em;
   text-align: center;
 }
-header img {
+.header img {
   width: 40px;
   /* border: 3px solid blue; */
   padding: 1.3em 0;
@@ -47,15 +47,15 @@ header img {
   line-height: 110%;
   padding-bottom: 0.5em;
 }
-header p {
+.header p {
   color: var(--Dark-Electric-Blue, #5e6e85);
   font-weight: 400;
   line-height: 150%;
   padding-bottom: 1em;
 }
-#wrapper {
+/* #wrapper {
   margin-top: -18em;
-}
+} */
 /* USER DETAILS */
 .user-details {
   background: var(--Pure-White, #fff);
@@ -65,6 +65,7 @@ header p {
   text-align: left;
   width: 90%;
   margin: 0 auto;
+  margin-top: -18em;
 }
 .user-details .details {
   color: var(--Gunmetal, #253347);
@@ -368,5 +369,30 @@ header p {
 }
 
 /* DESKTOP VIEW */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
+  .header {
+    background: var(
+      --Gradient-1,
+      linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%)
+    );
+    background-size: 978px 737px;
+    border: 3px solid blue;
+    padding: 1.5em 2em 8em 1.5em;
+    text-align: left;
+
+    & .container {
+      width: 70%;
+    }
+    & .header-text {
+      margin-top: 1em;
+    }
+  }
+  .header-wrap {
+    border: 3px solid red;
+    display: flex;
+  }
+  .user-details {
+    margin-top: 0;
+    border: 3px solid green;
+  }
 }
