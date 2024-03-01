@@ -437,4 +437,53 @@ body {
       }
     }
   }
+
+  .limitations {
+    & .container {
+      display: flex;
+      justify-content: space-between;
+
+      & h3,
+      .limit {
+        text-align: left;
+      }
+    }
+
+    & .grid {
+      border: 3px solid red;
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+      grid-template-areas:
+        " gender gender"
+        " age muscle "
+        " pregnancy race";
+      place-content: center;
+
+      & .gender {
+        grid-area: gender;
+        width: 50%;
+        place-self: center;
+      }
+      & .age {
+        grid-area: age;
+        margin-left: -4em;
+        width: 100%;
+      }
+      & .muscle {
+        grid-area: muscle;
+        margin-left: -4em;
+        width: 100%;
+      }
+      & .pregnancy {
+        grid-area: pregnancy;
+        margin-left: -16em;
+        width: 100%;
+      }
+      & .race {
+        grid-area: race;
+        width: 100%;
+        margin-left: -30em;
+        /* place-self: center; */
+      }
+    }
+  }
 }
