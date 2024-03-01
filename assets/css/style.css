@@ -375,24 +375,32 @@ body {
       --Gradient-1,
       linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%)
     );
-    background-size: 978px 737px;
-    border: 3px solid blue;
-    padding: 1.5em 2em 8em 1.5em;
+    /* background-size: 1240px 700px; */
+    /* border: 3px solid blue; */
+    /* padding: 1.5em 2em 8em 1.5em; */
+    padding-top: 1.5em;
+    padding-left: 3em;
+    padding-right: 15em;
+    padding-bottom: 0;
     text-align: left;
+    width: 150%;
 
-    & .container {
-      width: 70%;
-    }
     & .header-text {
       margin-top: 1em;
     }
   }
   .header-wrap {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
   }
   .user-details {
-    margin-top: 0;
-    border: 3px solid green;
+    margin-top: 8em;
+    /* border: 3px solid green; */
+    /* margin-left: -9em; */
+    width: 800px;
+    position: relative;
+    left: -8em;
+    width: 100%;
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
   }
 }
