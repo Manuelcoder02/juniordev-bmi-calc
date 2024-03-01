@@ -345,7 +345,7 @@ header p {
       " gender age"
       " muscle pregnancy"
       " race race";
-    place-items: center;
+    place-content: center;
 
     & .gender {
       grid-area: gender;
@@ -361,6 +361,12 @@ header p {
     }
     & .race {
       grid-area: race;
+      width: 50%;
+      place-self: center;
     }
   }
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 1024px) {
 }
