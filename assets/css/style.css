@@ -109,6 +109,11 @@ body {
     padding: 1.5em 0.5em;
     border-radius: 0.8em;
     border: 1px solid #d8e2e7;
+    cursor: pointer;
+
+    &:active {
+      border: 1px solid var(--Blue, #345ff6);
+    }
 
     &::placeholder {
       color: var(--Blue, #345ff6);
@@ -369,7 +374,7 @@ body {
 }
 
 /* DESKTOP VIEW */
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   .header {
     background: var(
       --Gradient-1,
