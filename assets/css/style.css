@@ -102,6 +102,11 @@ body {
   height: 20px;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    border: 1px solid #345ff6;
+    transition: all 0.5s;
+  }
 }
 
 .active {
@@ -120,6 +125,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  transition: all 0.5s;
 }
 .box-text {
   color: var(--Gunmetal, #253347);
