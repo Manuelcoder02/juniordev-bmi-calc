@@ -5,3 +5,8 @@
 
 const btnMetric = document.querySelector(".btn-metric");
 const btnImperial = document.querySelector(".btn-imperial");
+
+const inputHeightMetric = document.querySelector(".height-metric");
+const inputWeightMetric = document.querySelector(".weight-metric");
+
+const labelBMIScore = document.querySelector(".bmi-score");

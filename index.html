@@ -67,6 +67,7 @@
                   type="number"
                   name="height"
                   id="height"
+                  class="height-metric"
                   placeholder="cm"
                 />
               </div>
@@ -76,6 +77,7 @@
                   type="number"
                   name="weight"
                   id="weight"
+                  class="weight-metric"
                   placeholder="kg"
                 />
               </div>
@@ -116,18 +118,28 @@
                 </div>
               </div>
             </form>
+
             <div class="bmi-info">
-              <div class="col-1">
-                <p>Your BMI is...</p>
-                <h1 class="bmi-score">23.4</h1>
-              </div>
-              <div class="col-2">
+              <div class="bmi-info__welcome">
+                <h1>Welcome!</h1>
                 <p>
-                  Your BMI suggests you're a
-                  <span class="bmi-classification">healthy weight</span> Your
-                  ideal weight is between
-                  <span class="bmi-range">63.3kgs - 85.2kgs</span>.
+                  Enter your height and weight and you'll see your BMI result
+                  here
                 </p>
+              </div>
+              <div class="bmi-info__inputted hidden">
+                <div class="col-1">
+                  <p>Your BMI is...</p>
+                  <h1 class="bmi-score">23.4</h1>
+                </div>
+                <div class="col-2">
+                  <p>
+                    Your BMI suggests you're a
+                    <span class="bmi-classification">healthy weight</span> Your
+                    ideal weight is between
+                    <span class="bmi-range">63.3kgs - 85.2kgs</span>.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

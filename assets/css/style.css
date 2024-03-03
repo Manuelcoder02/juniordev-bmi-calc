@@ -227,6 +227,20 @@ body {
     }
   }
 }
+.bmi-info__welcome {
+  & h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1.2px;
+    margin-bottom: 1em;
+  }
+
+  & p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
 
 /* BMI MEANING SECTION STYLING */
 .bmi-meaning {
@@ -363,9 +377,11 @@ body {
   } */
   .bmi-info {
     border-radius: 100px 999px 999px 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    & .bmi-info__inputted {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     & .col-1 {
       /* display: flex; */
@@ -552,4 +568,8 @@ body {
       }
     }
   }
+}
+
+.hidden {
+  display: none !important;
 }
