@@ -14,5 +14,21 @@ const inputWeightMetric = document.querySelector(".weight-metric");
 
 const labelBMIScore = document.querySelector(".bmi-score");
 
-// console.log(btnMetric);
-// console.log(btnImperial);
+console.log(formImperial);
+console.log(formMetric);
+
+btnMetric.addEventListener("click", () => {
+  btnImperial.classList.remove("active");
+  btnMetric.classList.add("active");
+
+  formImperial.classList.add("hidden");
+  formMetric.classList.remove("hidden");
+});
+
+btnImperial.addEventListener("click", () => {
+  btnMetric.classList.remove("active");
+  btnImperial.classList.add("active");
+
+  formImperial.classList.remove("hidden");
+  formMetric.classList.add("hidden");
+});
