@@ -160,6 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1em 0;
+  position: relative;
 
   & label {
     color: #5e6e85;
@@ -168,21 +169,38 @@ body {
   }
 
   & input {
-    padding: 1.5em 0.5em;
+    padding: 1.5em 1em;
     border-radius: 0.8em;
     border: 1px solid #d8e2e7;
     cursor: pointer;
+    font-size: 1em;
+    color: var(--Gunmetal, #253347);
+    font-weight: 600;
 
     &:active {
       border: 1px solid var(--Blue, #345ff6);
     }
+  }
+  & .input-placeholder {
+    color: var(--Blue, #345ff6);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: right;
+    position: absolute;
+  }
 
-    &::placeholder {
-      color: var(--Blue, #345ff6);
-      font-size: 1.5em;
-      font-weight: 600;
-      text-align: right;
-    }
+  & .mobile-placeholder {
+    top: 2.5em;
+    left: 9.5em;
+  }
+  & .right-placeholder {
+    top: 2.5em;
+    left: 9.5em;
+  }
+
+  & .left-placeholder {
+    top: 2.5em;
+    left: 3.5em;
   }
 }
 
@@ -567,6 +585,21 @@ body {
         /* place-self: center; */
       }
     }
+  }
+
+  & .mobile-placeholder {
+    top: 2.5em;
+    left: 7.5em !important;
+  }
+  & .right-placeholder {
+    top: 2.5em;
+    left: 14em !important;
+    text-align: right;
+  }
+
+  & .left-placeholder {
+    top: 2.5em;
+    left: 6.2em !important;
   }
 }
 

@@ -68,8 +68,8 @@
                   name="height"
                   id="height"
                   class="height-metric"
-                  placeholder="cm"
                 />
+                <p class="input-placeholder mobile-placeholder">cm</p>
               </div>
               <div class="weight-box">
                 <label for="weight">Weight</label>
@@ -78,43 +78,27 @@
                   name="weight"
                   id="weight"
                   class="weight-metric"
-                  placeholder="kg"
                 />
+                <p class="input-placeholder mobile-placeholder">kg</p>
               </div>
             </form>
             <form action="'#" id="form" class="form-imperial hidden">
               <div class="height-box">
                 <label for="height">Height</label>
                 <div class="row">
-                  <input
-                    type="number"
-                    name="height"
-                    id="height"
-                    placeholder="ft"
-                  />
-                  <input
-                    type="number"
-                    name="height"
-                    id="inches"
-                    placeholder="in"
-                  />
+                  <input type="number" name="height" id="height" />
+                  <p class="input-placeholder left-placeholder">ft</p>
+                  <input type="number" name="height" id="inches" />
+                  <p class="input-placeholder right-placeholder">in</p>
                 </div>
               </div>
               <div class="weight-box">
                 <label for="weight">Weight</label>
                 <div class="row">
-                  <input
-                    type="number"
-                    name="weight"
-                    id="stone-weight"
-                    placeholder="st"
-                  />
-                  <input
-                    type="number"
-                    name="weight"
-                    id="pound"
-                    placeholder="lbs"
-                  />
+                  <input type="number" name="weight" id="stone-weight" />
+                  <p class="input-placeholder left-placeholder">st</p>
+                  <input type="number" name="weight" id="pound" />
+                  <p class="input-placeholder right-placeholder">lbs</p>
                 </div>
               </div>
             </form>

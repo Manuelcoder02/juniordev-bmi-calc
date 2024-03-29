@@ -32,3 +32,12 @@ btnImperial.addEventListener("click", () => {
   formImperial.classList.remove("hidden");
   formMetric.classList.add("hidden");
 });
+
+formMetric.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const height = Number(inputHeightMetric.value);
+  const weight = Number(inputWeightMetric.value);
+
+  const bmi = (weight / height) * height;
+});
