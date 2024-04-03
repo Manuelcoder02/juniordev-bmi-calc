@@ -14,8 +14,8 @@ const inputWeightMetric = document.querySelector(".weight-metric");
 
 const labelBMIScore = document.querySelector(".bmi-score");
 
-console.log(formImperial);
-console.log(formMetric);
+// console.log(formImperial);
+// console.log(formMetric);
 
 btnMetric.addEventListener("click", () => {
   btnImperial.classList.remove("active");
@@ -33,11 +33,12 @@ btnImperial.addEventListener("click", () => {
   formMetric.classList.add("hidden");
 });
 
-formMetric.addEventListener("submit", (e) => {
+inputWeightMetric.addEventListener("keypress", (e) => {
   e.preventDefault();
 
   const height = Number(inputHeightMetric.value);
   const weight = Number(inputWeightMetric.value);
 
   const bmi = (weight / height) * height;
+  console.log(bmi);
 });
